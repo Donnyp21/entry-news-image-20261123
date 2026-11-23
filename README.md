@@ -4,10 +4,11 @@
 
 # news-image-20261123 — Monday 23 November 2026, in one image
 
-A newspaper front page, "MONDAY 23 NOVEMBER 2026", summing up the
-day's world news in a single frame (stories checked against 23 Nov
-2026 reporting from Reuters, AP, CNN, Just Security's Early Edition,
-Rigzone, stockanalysis, iHeart/BBC, The Daily Fox and Glasgow Times):
+A newspaper front page, "MONDAY 23 NOVEMBER 2026", that packs the
+day's world news into a single frame. Every story was checked against
+23 Nov 2026 reporting from Reuters, AP, CNN, Just Security's Early
+Edition, Rigzone, stockanalysis, iHeart/BBC, The Daily Fox and
+Glasgow Times:
 
 1. **COP31 collapses with no deal** — the UN climate summit in
    Antalya ends after record overtime as the EU and 130 countries
@@ -34,10 +35,10 @@ Rigzone, stockanalysis, iHeart/BBC, The Daily Fox and Glasgow Times):
 
 ## How it works
 
-`gen_image.py` (build-time only, Pillow) draws the artwork from
+`gen_image.py` (build-time only, Pillow) paints the artwork from
 scratch — shapes and text, no photographs, no copied artwork — and
 saves it as `art.jpg` (1024x1024 JPEG). `main.py` (Python 3.13
-standard library only, no network) validates that artwork against
+standard library only, no network) checks that artwork against
 the competition's caps (a whole JPEG, at most 1 MiB, at most
 1024x1024 pixels) and copies it to `$MAKEFUN_OUTPUT_DIR/entry.png`
 (falling back to `$MAKEFUN_OUTPUT`, then `/output`). The output is
